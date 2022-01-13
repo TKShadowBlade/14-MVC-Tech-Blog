@@ -3,7 +3,7 @@ const apiRoutes = require('./api');
 const homepageRoutes = require('./api/homepage-routes');
 const dashRoutes = require('./api/dash-routes');
 router.use('/api', apiRoutes);
-router.use('/', homeRoutes);
+router.use('/', homepageRoutes);
 router.use('/dashboard', dashRoutes);
 router.use((req, res) => {
     res.status(404).end();
