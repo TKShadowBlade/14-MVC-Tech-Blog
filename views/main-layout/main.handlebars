@@ -13,10 +13,10 @@
         <header class="hero">
             <div>
                 <nav class = "nav">
-                    <a class="link" href="/">Home</a>
-                    <a class="link" href="/dash">Dashboard</a>
+                    <a class="link" href="/">Homepage</a>
+                    <a class="link" href="/dash">Dashboard Page</a>
                     {{#if loggedIn}}
-                    <a class ="link" href="/" id="logout">Logout</a>
+                    <a class ="link" href="/" id="sign-out">Sign Out</a>
                     {{else}}
                     <a class="link" href="/login">Login</a>
                     {{/if}}
@@ -31,7 +31,7 @@
     </div>
 
     {{#if loggedIn}}
-    <script src="logout.js"></script>
+    <script src='/public/js/logout.js'></script>
     {{/if}}
 </body>
 
