@@ -1,4 +1,4 @@
-const registerFormHandler = async function(evt) {
+const handleRegistration = async function(evt) {
     evt.preventDefault();
 
     const usernameEl = document.querySelector('#username-input-register');
@@ -21,4 +21,4 @@ const registerFormHandler = async function(evt) {
     }
 };
 
-document.querySelector('#reg-form').addEventListener('submit', registerFormHandler);
+document.querySelector('#reg-form').addEventListener('submit', handleRegistration);
